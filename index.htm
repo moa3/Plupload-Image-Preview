@@ -27,8 +27,10 @@
 
 
 	<!-- Load and initialize scripts. -->
-	<script type="text/javascript" src="./assets/jquery/jquery-2.0.3.min.js"></script>
-	<script type="text/javascript" src="./assets/plupload/js/plupload.full.min.js"></script>
+	<!--script type="text/javascript" src="./assets/jquery/jquery-2.0.3.min.js"></script-->
+	<script type="text/javascript" src="./assets/jquery/jquery.js?t=98A7324983A7983"></script>
+	<script type="text/javascript" src="./assets/plupload/js/moxie.js"></script>
+	<script type="text/javascript" src="./assets/plupload/js/plupload.dev.js"></script>
 	<script type="text/javascript">
 
 		(function( $, plupload ) {
@@ -46,7 +48,7 @@
 
 				// Try to load the HTML5 engine and then, if that's
 				// not supported, the Flash fallback engine.
-				runtimes: "html5,flash",
+				runtimes: "flash",
 
 				// The upload URL - for our demo, we'll just use a 
 				// fake end-point (we're not actually uploading).
@@ -70,7 +72,7 @@
 				flash_swf_url: "./assets/plupload/js/Moxie.swf",
 
 				// Needed for the Flash environment to work.
-				urlstream_upload: true
+				//urlstream_upload: true
 
 			});
 
@@ -147,7 +149,7 @@
 					// This will scale the image (in memory) before it
 					// tries to render it. This just reduces the amount
 					// of Base64 data that needs to be rendered.
-					preloader.downsize( 300, 300 );
+					//preloader.downsize( 300, 300 );
 
 					// Now that the image is preloaded, grab the Base64
 					// encoded data URL. This will show the image 
